@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentInsetLeft="0dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="Blog"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="34sp"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_baseline_reorder_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:tint="@color/black"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Title ..."
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:drawableTint="@color/black"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last News"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                android:textSize="21sp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/recyclerlastnews"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last News"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                android:textSize="21sp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/recyclerpopular"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

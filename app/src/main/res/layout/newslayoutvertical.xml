@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/relativepost2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:id="@+id/crdimgpost2"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imgpost2"
+            android:layout_height="match_parent"
+            android:src="@drawable/p1"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shortlorem"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/txttitle2"
+        android:layout_toRightOf="@id/crdimgpost2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday, Mordad 17, 1400"
+        android:layout_below="@id/txttitle2"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txtdate2"
+        android:layout_toRightOf="@id/crdimgpost2"
+        android:textColor="#656565"
+        />
+</RelativeLayout>

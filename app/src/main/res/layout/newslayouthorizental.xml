@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="240dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/crdpost"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        android:layout_height="240dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgpost"
+                android:src="@drawable/p1"
+                android:scaleType="centerCrop"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25000000"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_alignParentBottom="true">
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"
+           android:text="@string/shortlorem"
+           android:layout_margin="10dp"
+           android:textColor="@color/white"
+           android:textSize="31sp"
+           android:id="@+id/txttitle"
+           android:textStyle="bold"
+           />
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtdate"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="Sunday, Mordad 17, 1400 "
+           android:textColor="#F6F6F6"
+           android:textSize="14sp"
+           android:layout_below="@id/txttitle"/>
+       <androidx.appcompat.widget.AppCompatImageView
+           android:layout_width="24dp"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_account_circle_24"
+           android:layout_below="@id/txttitle"
+           android:id="@+id/imgauthor"
+           android:layout_toRightOf="@id/txtdate"
+           android:layout_marginLeft="10dp"
+           android:layout_marginBottom="10dp"/>
+   </RelativeLayout>
+</RelativeLayout>
